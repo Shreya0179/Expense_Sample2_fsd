@@ -15,7 +15,7 @@ function Dashboard() {
   const fetchExpenses = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/expenses",
+        "https://expense-sample2-fsd.onrender.com/api/expenses",
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -34,7 +34,7 @@ function Dashboard() {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/expense",
+        "https://expense-sample2-fsd.onrender.com/api/expense",
         form,
         {
           headers: {
